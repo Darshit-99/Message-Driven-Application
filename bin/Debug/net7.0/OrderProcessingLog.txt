@@ -1,0 +1,10 @@
+25-09-2024 11:59:36: ERROR: Order 1 failed due to out of stock.
+25-09-2024 11:59:36: ERROR: Order 2 failed due to out of stock.
+25-09-2024 11:59:37: SUCCESS: Order 3 processed successfully.
+25-09-2024 11:59:37: SUCCESS: Order 4 processed successfully.
+25-09-2024 11:59:37: SUCCESS: Order 5 processed successfully.
+25-09-2024 11:59:37: ERROR: Order 6 failed due to out of stock.
+25-09-2024 11:59:38: SUCCESS: Order 7 processed successfully.
+25-09-2024 11:59:38: SUCCESS: Order 8 processed successfully.
+25-09-2024 11:59:38: ERROR: Order 9 failed due to out of stock.
+25-09-2024 11:59:38: ERROR: Order 10 failed due to out of stock.

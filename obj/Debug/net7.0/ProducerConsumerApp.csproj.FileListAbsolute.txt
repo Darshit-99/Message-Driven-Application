@@ -1,0 +1,14 @@
+D:\ProducerConsumerApp\bin\Debug\net7.0\ProducerConsumerApp.exe
+D:\ProducerConsumerApp\bin\Debug\net7.0\ProducerConsumerApp.deps.json
+D:\ProducerConsumerApp\bin\Debug\net7.0\ProducerConsumerApp.runtimeconfig.json
+D:\ProducerConsumerApp\bin\Debug\net7.0\ProducerConsumerApp.dll
+D:\ProducerConsumerApp\bin\Debug\net7.0\ProducerConsumerApp.pdb
+D:\ProducerConsumerApp\obj\Debug\net7.0\ProducerConsumerApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProducerConsumerApp\obj\Debug\net7.0\ProducerConsumerApp.AssemblyInfoInputs.cache
+D:\ProducerConsumerApp\obj\Debug\net7.0\ProducerConsumerApp.AssemblyInfo.cs
+D:\ProducerConsumerApp\obj\Debug\net7.0\ProducerConsumerApp.csproj.CoreCompileInputs.cache
+D:\ProducerConsumerApp\obj\Debug\net7.0\ProducerConsumerApp.dll
+D:\ProducerConsumerApp\obj\Debug\net7.0\refint\ProducerConsumerApp.dll
+D:\ProducerConsumerApp\obj\Debug\net7.0\ProducerConsumerApp.pdb
+D:\ProducerConsumerApp\obj\Debug\net7.0\ProducerConsumerApp.genruntimeconfig.cache
+D:\ProducerConsumerApp\obj\Debug\net7.0\ref\ProducerConsumerApp.dll
