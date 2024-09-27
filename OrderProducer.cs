@@ -23,18 +23,18 @@ namespace ProducerConsumerApp
                 {
                     OrderId = i,
                     CustomerName = $"Customer {i}",
-                    OrderAmount = _random.Next(50, 500), // Random order amount
-                    IsInStock = _random.Next(0, 2) == 1  // Random stock availability
+                    OrderAmount = _random.Next(50, 500), 
+                    IsInStock = _random.Next(0, 2) == 1  
                 };
 
                 _orderQueue.Add(order);
                 Console.WriteLine($"Order placed: {order.OrderId}, Customer: {order.CustomerName}, Amount: {order.OrderAmount}, In Stock: {order.IsInStock}");
 
-                // Simulate async order placing
+                
                 await Task.Delay(100);
             }
 
-            _orderQueue.CompleteAdding(); // Signal that no more orders will be added
+            _orderQueue.CompleteAdding(); 
         }
     }
 }

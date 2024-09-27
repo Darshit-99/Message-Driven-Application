@@ -12,6 +12,6 @@ namespace ProducerConsumerApp
         public string CustomerName { get; set; }
         public double OrderAmount { get; set; }
         public bool IsInStock { get; set; }
-        public string OrderStatus { get; set; }  // Tracks the order status (e.g., "Processed", "Out of Stock")
+        public string OrderStatus { get; set; }  
     }
 }

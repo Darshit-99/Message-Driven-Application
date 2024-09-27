@@ -10,16 +10,16 @@ namespace ProducerConsumerApp
     public class OrderConsumer
     {
         private readonly BlockingCollection<Order> _orderQueue;
-        private int _successCount;    // Tracks the total number of successfully processed orders
-        private int _failureCount;    // Tracks the total number of failed orders
-        private readonly string _logFilePath;   // Path to log the processed results
+        private int _successCount;    
+        private int _failureCount;    
+        private readonly string _logFilePath;  
 
         public OrderConsumer(BlockingCollection<Order> orderQueue, string logFilePath)
         {
             _orderQueue = orderQueue;
             _logFilePath = logFilePath;
 
-            // Clear previous logs (optional)
+            
             if (File.Exists(_logFilePath))
             {
                 File.Delete(_logFilePath);
@@ -34,12 +34,12 @@ namespace ProducerConsumerApp
                 {
                     if (!order.IsInStock)
                     {
-                        // Mark order as out of stock
+                        
                         order.OrderStatus = "Out of Stock";
                         _failureCount++;
                         Console.WriteLine($"Order {order.OrderId} failed. Item out of stock.");
 
-                        // Log the out of stock case
+                        
                         Log($"ERROR: Order {order.OrderId} failed due to out of stock.");
                     }
                     else
@@ -49,30 +49,30 @@ namespace ProducerConsumerApp
                         _successCount++;
                         Console.WriteLine($"Order {order.OrderId} processed successfully.");
 
-                        // Log success
+                        
                         Log($"SUCCESS: Order {order.OrderId} processed successfully.");
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Handle unexpected errors
+                    
                     _failureCount++;
                     Console.WriteLine($"Failed to process Order {order.OrderId}: {ex.Message}");
                     Log($"ERROR: Order {order.OrderId} failed. Reason: {ex.Message}");
                 }
 
-                // Simulate asynchronous processing delay
+                
                 await Task.Delay(200);
             }
         }
 
         private Task ProcessOrderAsync(Order order)
         {
-            // Simulate successful order processing logic
+            
             return Task.CompletedTask;
         }
 
-        // Method to log success and error messages
+        
         private void Log(string message)
         {
             using (StreamWriter writer = new StreamWriter(_logFilePath, true))
